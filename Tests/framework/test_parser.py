@@ -13,11 +13,9 @@ class TestParser:
         self.parser = Parser(self.command_generator)
     
     def test_GivenAWrongCommandThenParserShouldRaiseWrongCommandException(self):
-        command_generator = CommandGenerator()
-        parser = Parser(command_generator)
         command = 'wrong command'
         try:
-            command = parser.parse(command)
+            command = self.parser.parse(command)
             assert False
         except ValueError:
             assert True
