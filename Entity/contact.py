@@ -9,11 +9,11 @@ class Contact:
 
     @property
     def first_name(self):
-        return self.first_name
+        return self.__first_name
 
     @property
     def last_name(self):
-        return self.last_name
+        return self.__last_name
     
     @property
     def phone_numbers(self):

@@ -1,8 +1,8 @@
-import abc
+from abc import abstractmethod
 
 
-class Database:
+class Database():
 
-    @abc.abstractmethod
+    @abstractmethod
     def execute(self, query):
         pass

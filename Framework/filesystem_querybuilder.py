@@ -17,12 +17,12 @@ class FileSystemQueryBuilder(QueryBuilder):
         contacts = user.contacts
         for contact in contacts:
             contact_data = dict()
-            contact_data['first_name'] = contact.first_name()
-            contact_data['last_name'] = contact.last_name()
-            contact_data['phone_numbers'] = contact.phone_numbers()
-            contact_data['description'] = contact.description()
+            contact_data['first_name'] = contact.first_name
+            contact_data['last_name'] = contact.last_name
+            contact_data['phone_numbers'] = contact.phone_numbers
+            contact_data['description'] = contact.description
             user_contacts.append(contact_data)
         user_data['contacts'] = user_contacts
         query = json.dumps(user_data)
-        query = 'save ' + query
+        query = 'save=' + query
         return query

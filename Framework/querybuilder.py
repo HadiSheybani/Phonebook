@@ -1,6 +1,6 @@
-from abc import ABC, abstractmethod
+from abc import abstractmethod
 
-class QueryBuilder(ABC):
+class QueryBuilder():
 
     @abstractmethod
     def save_user_query(self, user):

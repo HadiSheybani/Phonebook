@@ -46,4 +46,4 @@ class User:
     
     @contacts.setter
     def contacts(self, contacts):
-        self.__contacts = contacts.copy()
+        self.__contacts = contacts
