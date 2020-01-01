@@ -1,4 +1,4 @@
-
+from .contact import Contact
 
 class User:
     def __init__(self, name, email, username, pass_hash):
@@ -6,6 +6,7 @@ class User:
         self.__email = email
         self.__username = username
         self.__pass_hash = pass_hash
+        self.__contacts = list()
 
     @property
     def name(self):
@@ -38,3 +39,11 @@ class User:
     @pass_hash.setter
     def pass_hash(self, pass_hash):
         self.pass_hash = pass_hash
+
+    @property
+    def contacts(self):
+        return self.__contacts
+    
+    @contacts.setter
+    def contacts(self, contacts):
+        self.__contacts = contacts.copy()
