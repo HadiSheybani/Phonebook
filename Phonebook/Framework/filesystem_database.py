@@ -3,7 +3,7 @@ import json
 
 class FileSystemDatabase(Database):
     def __init__(self):
-        self.database_dir = 'database/'
+        self.database_dir = 'Phonebook/database/'
     
     def execute(self, query):
         commands = query.split('=')

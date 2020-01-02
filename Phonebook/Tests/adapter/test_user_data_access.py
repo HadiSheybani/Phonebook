@@ -28,4 +28,4 @@ class TestUserDataAccess:
 
         user_data_access = UserDataAccess(query_builder, database)
         user_data_access.save(user)
-        database.execute.assert_called_once_with(query_builder.save.return_value)        
+        database.execute.assert_called_once_with(query_builder.save_user_query.return_value)        

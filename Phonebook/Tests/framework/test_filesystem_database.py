@@ -10,5 +10,5 @@ class TestFilesystemDatabase:
         query = 'save={"name": "hadi", "email": "test@email.com"}'
         filesystem_database = FileSystemDatabase()
         filesystem_database.execute(query)
-        assert os.path.exists('database/hadi_test@email.com')
+        assert os.path.exists('Phonebook/database/hadi_test@email.com')
 
