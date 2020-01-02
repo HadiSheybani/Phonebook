@@ -1,10 +1,8 @@
 import pytest
 from hamcrest import *
-import sys
-sys.path.append('../../')
 
-from Framework import CommandGenerator
-from Framework import Command
+from Phonebook.Framework.command_generator import CommandGenerator
+from Phonebook.Framework.command import Command
 
 class TestCommandGenerator:
 

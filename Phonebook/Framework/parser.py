@@ -1,4 +1,4 @@
-from Framework.command_generator import CommandGenerator
+from Phonebook.Framework.command_generator import CommandGenerator
 
 class Parser:
     def __init__(self, command_generator):

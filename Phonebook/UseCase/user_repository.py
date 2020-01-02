@@ -1,7 +1,5 @@
-import sys
-sys.path.append('../')
-from Entity import User
-from Adapter import UserDataAccess
+from Phonebook.Entity.user import User
+from Phonebook.Adapter.user_data_access import UserDataAccess
 
 class UserRepository:
     def __init__(self, user_data_access):

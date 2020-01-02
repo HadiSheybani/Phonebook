@@ -1,11 +1,9 @@
 import pytest
 from mock import Mock
 from hamcrest import *
-import sys
-sys.path.append('../../')
-from Framework import Parser
-from Framework import CommandGenerator
-from Framework import Command
+from Phonebook.Framework.parser import Parser
+from Phonebook.Framework.command_generator import CommandGenerator
+from Phonebook.Framework.command import Command
 
 class TestParser:
     def setup_method(self, method):

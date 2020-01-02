@@ -1,9 +1,7 @@
 import pytest
 from hamcrest import *
 import os
-import sys
-sys.path.append('../../')
-from Framework import FileSystemDatabase
+from Phonebook.Framework.filesystem_database import FileSystemDatabase
 
 class TestFilesystemDatabase:
 

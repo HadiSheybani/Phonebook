@@ -1,9 +1,7 @@
-import sys
-sys.path.append('../')
 from .command import Command
 from .command_instractions import *
 
-from UseCase import UserRepository
+from Phonebook.UseCase.user_repository import UserRepository
 
 class ServiceRunner:
     def __init__(self, user_repository):

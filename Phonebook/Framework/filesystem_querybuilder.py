@@ -1,9 +1,7 @@
 from .querybuilder import QueryBuilder
 import json
-import sys
-sys.path.append('../')
-from Entity import User
-from Entity import Contact
+from Phonebook.Entity.user import User
+from Phonebook.Entity.contact import Contact
 
 class FileSystemQueryBuilder(QueryBuilder):
 

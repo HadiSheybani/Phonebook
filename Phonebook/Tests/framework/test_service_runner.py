@@ -2,12 +2,9 @@ import pytest
 from hamcrest import *
 from mock import Mock
 import mock
-import sys
-sys.path.append('../../')
-
-from Framework import ServiceRunner
-from Framework import Command
-from UseCase import UserRepository
+from Phonebook.Framework.service_runner import ServiceRunner
+from Phonebook.Framework.command import Command
+from Phonebook.UseCase.user_repository import UserRepository
 
 class TestServiceRunner:
 

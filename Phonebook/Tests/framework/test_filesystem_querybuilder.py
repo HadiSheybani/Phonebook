@@ -1,11 +1,9 @@
 import pytest
 from hamcrest import *
 import json
-import sys
-sys.path.append('../../')
-from Framework import FileSystemQueryBuilder
-from Entity import User
-from Entity import Contact
+from Phonebook.Framework.filesystem_querybuilder import FileSystemQueryBuilder
+from Phonebook.Entity.user import User
+from Phonebook.Entity.contact import Contact
 
 class TestFileSystemQueryBuilder:
 
