@@ -10,3 +10,6 @@ class UserRepository:
         user = User(name, email, email, pass_hash)
         self.__user_data_access.save(user)
         return user
+    
+    def get_user(self, username):
+        return self.__user_data_access.get(username)

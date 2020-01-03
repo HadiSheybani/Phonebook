@@ -11,3 +11,8 @@ class CommandGenerator:
         if "password" not in command_option:
             raise ValueError("Please Enter Your Password")
         return Command(CREATE_USER, command_option)
+    
+    def login_user(self, command_option):
+        if "username" not in command_option:
+            raise ValueError("Please Enter Your Username")
+        return Command(LOGIN_USER, command_option)

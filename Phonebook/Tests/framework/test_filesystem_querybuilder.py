@@ -24,4 +24,10 @@ class TestFileSystemQueryBuilder:
                                                     , 'description': contact.description}]})
         query = self.filesystem_querybuilder.save_user_query(user)
         assert_that(query, equal_to('save=' + correct_query))
+    
+    def test_GivenUsernameThenQueyrBuilderShouldReturnGetUserQuery(self):
+        username = 'test@email.com'
+        correct_query = json.dumps({'username': username})
+        query = self.filesystem_querybuilder.get_user_query(username)
+        assert_that(query, equal_to('get=' + correct_query))
 

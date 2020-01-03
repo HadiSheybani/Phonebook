@@ -24,3 +24,9 @@ class FileSystemQueryBuilder(QueryBuilder):
         query = json.dumps(user_data)
         query = 'save=' + query
         return query
+    
+    def get_user_query(self, username):
+        username = {"username": username}
+        query = json.dumps(username)
+        query = "get=" + query
+        return query

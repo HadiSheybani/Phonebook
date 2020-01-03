@@ -4,7 +4,8 @@ from .parser import Parser
 
 class ConsoleParser(Parser):
     def __init__(self, command_generator):
-        self.__commands = [cm_instruction.CREATE_USER,]
+        self.__commands = [cm_instruction.CREATE_USER,
+                            cm_instruction.LOGIN_USER,]
         self.__command_generator = command_generator
 
     def parse(self, command_str):
@@ -23,3 +24,5 @@ class ConsoleParser(Parser):
             command_options[option_name] = option_value
         if (command_index == 0):
             return self.__command_generator.create_user(command_options)
+        if (command_index == 1):
+            return self.__command_generator.login_user(command_options)
